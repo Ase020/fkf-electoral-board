@@ -56,7 +56,7 @@ function Hero() {
         <div className="flex flex-col gap-5 py-6">
           <h3 className="text-xl font-semibold">Important links</h3>
 
-          <div className="grid grid-cols-2 grid-rows-2 gap-6 px-4">
+          <div className="grid grid-cols-2 gap-6 px-4">
             {linksData.map((link) => (
               <ImportantLink key={link.id} linkData={link} />
             ))}
@@ -80,7 +80,7 @@ function ImportantLink({ linkData }) {
         href={link}
         target="_blank"
         rel="noopener noreferrer"
-        className="underline underline-offset-4 text-primary text-base font-normal"
+        className="underline underline-offset-4 text-primary text-base font-normal line-clamp-1"
       >
         {title}
       </a>
