@@ -8,7 +8,6 @@ import { logo } from "../assets";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  console.log("isOpen: ", isOpen);
   return (
     <header className="border-b h-20 relative">
       <div className="mx-auto w-full h-full max-w-7xl flex-between">
