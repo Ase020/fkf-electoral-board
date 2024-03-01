@@ -6,7 +6,7 @@ import { Footer, Navbar } from "../components";
 function Layout() {
   return (
     <section className="w-screen">
-      {/* <Navbar /> */}
+      <Navbar />
       <Outlet />
       <Footer />
     </section>
