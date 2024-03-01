@@ -13,7 +13,7 @@ function Navbar() {
         </Link>
 
         <nav className="flex-between gap-8 pr-8 text-base font-semibold">
-          <Link to="/" className="text-primary underline">
+          <Link to="/" className="text-primary underline underline-offset-4">
             Home
           </Link>
           <Link to="/" className="text-primary">

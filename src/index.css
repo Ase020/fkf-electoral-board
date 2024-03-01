@@ -8,6 +8,11 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
 @layer utilities {
   .flex-between {
     @apply flex items-center justify-between;
