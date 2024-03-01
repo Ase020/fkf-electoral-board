@@ -26,12 +26,14 @@ const linksData = [
 
 function Hero() {
   return (
-    <div className="max-width flex items-center w-full gap-10">
-      <aside className="w-1/2 flex flex-col gap-12 px-4">
-        <div className="flex flex-col gap-8">
-          <h1 className="text-6xl font-semibold">Election results out</h1>
+    <div className="max-width flex items-center flex-col-reverse md:flex-row w-full gap-0 md:gap-10">
+      <aside className="w-full md:w-1/2 flex flex-col gap-6 md:gap-12 px-4">
+        <div className="flex flex-col text-center md:text-left gap-6 md:gap-8">
+          <h1 className="text-3xl md:text-6xl font-semibold">
+            Election results out
+          </h1>
 
-          <p className="text-2xl font-normal leading-normal">
+          <p className="text-base md:text-2xl font-normal leading-normal">
             Electoral Board has published the final results from the national
             elections held on October 17, 2020. This comes after the lapse of a
             disputes resolution window, provided for in the {" "}
@@ -47,7 +49,7 @@ function Hero() {
 
           <button
             type="button"
-            className="bg-red-600 text-white py-3 px-5 rounded-lg uppercase text-sm font-semibold w-fit"
+            className="bg-red-600 text-white py-3 px-5 rounded-lg uppercase text-sm font-semibold w-full md:w-fit"
           >
             final results
           </button>
@@ -56,7 +58,7 @@ function Hero() {
         <div className="flex flex-col gap-5 py-6">
           <h3 className="text-xl font-semibold">Important links</h3>
 
-          <div className="grid grid-cols-2 gap-6 px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-0 md:px-4">
             {linksData.map((link) => (
               <ImportantLink key={link.id} linkData={link} />
             ))}
@@ -64,7 +66,7 @@ function Hero() {
         </div>
       </aside>
 
-      <aside className="w-1/2 p-8">
+      <aside className="w-full md:w-1/2 p-8">
         <img src={hero} alt="hero" className="w-full object-cover" />
       </aside>
     </div>

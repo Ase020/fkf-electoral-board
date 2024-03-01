@@ -15,7 +15,7 @@ function ArticleCard() {
         className="w-full object-cover"
       />
       <div className="flex flex-col px-3 py-4 gap-1">
-        <h3 className="text-lg leading-tight font-semibold">
+        <h3 className="text-base sm:text-lg leading-tight font-semibold">
           RECAP: Find out what the presidential aspirants had to say
         </h3>
 

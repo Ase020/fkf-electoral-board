@@ -4,11 +4,11 @@ import { aboutUs } from "../../../assets";
 function AboutUs() {
   return (
     <div className="bg-[#F6FFF8]">
-      <div className="max-width flex-between gap-20 p-20">
-        <div className="w-1/2 flex flex-col gap-6">
+      <div className="max-width flex-between flex-col-reverse md:flex-row gap-10 md:gap-20 pt-10 sm:p-10 md:p-20">
+        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start gap-6 p-3 md:p-0 mb-4 md:mb-0">
           <h3 className="text-primary text-3xl font-medium">About Us</h3>
 
-          <p className="text-base font-normal">
+          <p className="text-base font-normal text-center md:text-left">
             The FKF Electoral Board was constituted by the FKF National
             Executive Committee, as provided for in Article 39 Clause 1p of the
             FKF Constitution. It will be in place for four years effective
@@ -23,12 +23,12 @@ function AboutUs() {
 
           <button
             type="button"
-            className="capitalize bg-primary w-fit text-white border border-transparent px-4 py-2 rounded-lg transition-all duration-500 ease-in hover:border-primary hover:bg-transparent hover:text-primary"
+            className="capitalize bg-primary w-full md:w-fit text-white border border-transparent px-4 py-2 rounded-lg transition-all duration-500 ease-in hover:border-primary hover:bg-transparent hover:text-primary"
           >
             Read more
           </button>
         </div>
-        <div className="w-1/2 h-full">
+        <div className="w-full md:w-1/2 h-full">
           <img
             src={aboutUs}
             alt="board_members"
