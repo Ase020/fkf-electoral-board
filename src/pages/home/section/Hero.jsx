@@ -26,7 +26,7 @@ const linksData = [
 
 function Hero() {
   return (
-    <div className="flex items-center w-full gap-10">
+    <div className="max-width flex items-center w-full gap-10">
       <aside className="w-1/2 flex flex-col gap-12 px-4">
         <div className="flex flex-col gap-8">
           <h1 className="text-6xl font-semibold">Election results out</h1>

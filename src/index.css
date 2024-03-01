@@ -14,6 +14,10 @@
 }
 
 @layer utilities {
+  .max-width {
+    @apply mx-auto max-w-7xl;
+  }
+
   .flex-between {
     @apply flex items-center justify-between;
   }
