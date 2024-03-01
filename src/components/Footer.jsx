@@ -8,16 +8,16 @@ function Footer() {
 
   return (
     <section className="bg-primary">
-      <footer className="max-width flex-center flex-col gap-14 text-white py-12 px-20">
-        <nav className="flex-center flex-col gap-8 font-semibold">
-          <div className="flex items-center gap-2">
+      <footer className="max-width flex-center flex-col gap-14 text-white py-4 sm:py-7 md:py-12 px-3 sm:px-10 md:px-20">
+        <nav className="flex-center flex-col w-full gap-8 font-semibold">
+          <div className="flex-center  w-full gap-2 flex-col md:flex-row">
             <img src={logo} alt="logo" className="w-32 object-contain" />
             <h3 className="uppercase text-lg font-semibold">
               FKF ELECTION BOARD
             </h3>
           </div>
 
-          <ul className="flex items-center gap-8 text-base">
+          <ul className="grid grid-cols-2 md:flex items-center w-full gap-4 md:gap-8 text-base">
             <Link to="/" className="">
               About Us
             </Link>
@@ -30,18 +30,19 @@ function Footer() {
             <Link to="/" className="">
               FKF Electoral code
             </Link>
-            <Link to="/" className="">
+            <Link to="/" className="col-span-2">
               Appeals & Disputes
             </Link>
           </ul>
         </nav>
-        <div className="border-t w-full pt-8  flex-between">
-          <div className="flex items-center gap-2">
-            <p className="">© {year}</p>●<p className="">FKF Electoral Board</p>
-            ●<p className="">All Rights Reserved.</p>
+        <div className="border-t w-full pt-4 md:pt-8 flex md:flex-between gap-3 md:gap-0 flex-col md:flex-row">
+          <div className="flex items-center justify-center gap-2">
+            <p className="">© {year} </p>
+            <p className="">FKF Electoral Board </p>
+            <p className="">All Rights Reserved</p>
           </div>
 
-          <div className="flex items-center capitalize gap-3">
+          <div className="flex items-center justify-between capitalize gap-3 w-full">
             <p className="cursor-pointer">terms</p>
             <p className="cursor-pointer">privacy</p>
             <p className="cursor-pointer">cookies</p>
